@@ -13,4 +13,12 @@ while guess := to_be_guessed :
         print("sorry that you're giving up!")
         break
 else:
-    print("congratulations on you passing out parade")            
+    print("congratulations on you passed")            
+    
+# sum of the numbers fro the user till the enter stop
+total_sum = 0
+while True:
+    user_input = input("Enter a number or type 'stop' to end: ")
+    if user_input.lower() == 'stop':
+     total_sum += int(user_input)
+print("Total sum:", total_sum)
